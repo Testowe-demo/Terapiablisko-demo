@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+header {
+    background: #6c63ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.hero {
+    background: #e0e0ff;
+    padding: 20px;
+    text-align: center;
+}
+.about, .contact {
+    padding: 20px;
+    background: white;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #5548c8;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+    margin-top: 20px;
+}
