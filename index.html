@@ -1,38 +1,136 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TerapiaBlisko</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TerapiaBlisko — psycholog online i stacjonarnie</title>
+  <meta name="description" content="Terapia indywidualna, terapia par i konsultacje online. Szybkie terminy, bezpieczna przestrzeń do rozmowy.">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h1>TerapiaBlisko</h1>
-        <p>Profesjonalna pomoc psychologiczna online</p>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Jesteśmy tu, aby Ci pomóc</h2>
-            <p>Rozmowa z psychologiem w bezpiecznej przestrzeni online</p>
-        </section>
-        <section class="about">
-            <h2>O nas</h2>
-            <p>Oferujemy sesje terapeutyczne online dostosowane do Twoich potrzeb. Nasz zespół składa się z certyfikowanych specjalistów z wieloletnim doświadczeniem.</p>
-        </section>
-        <section class="contact">
-            <h2>Kontakt</h2>
-            <form>
-                <label>Imię: <input type="text" name="name" required></label>
-                <label>Email: <input type="email" name="email" required></label>
-                <label>Wiadomość: <textarea name="message" required></textarea></label>
-                <button type="submit">Wyślij</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="year"></span> TerapiaBlisko</p>
-    </footer>
-    <script src="script.js"></script>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">TerapiaBlisko</a>
+      <nav class="nav">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#kontakt" class="btn btn-small">Umów wizytę</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <div class="container hero-grid">
+        <div>
+          <h1>Rozmowa, która pomaga wrócić do równowagi</h1>
+          <p class="lead">Terapia indywidualna, terapia par i konsultacje online — dyskretnie i bezpiecznie.</p>
+          <div class="cta-row">
+            <a class="btn" href="#kontakt">Umów wizytę</a>
+            <a class="btn ghost" href="#cennik">Zobacz cennik</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero.svg" alt="Spokojna scena — ilustracja" width="600" height="420" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="container about card reveal">
+      <div class="about-grid">
+        <img class="about-photo" src="images/psychologist.svg" alt="Psycholog — portret ilustracyjny" width="420" height="420" loading="lazy"/>
+        <div>
+          <h2>O mnie</h2>
+          <p>Nazywam się <strong>dr Anna Kowalska</strong>, psycholog i psychoterapeutka z ponad 10-letnim doświadczeniem. Pracuję w nurcie integracyjnym (CBT, ACT, TSR). Pomagam w trudnościach z lękiem, nastrojem, stresem i relacjami.</p>
+          <ul class="ticks">
+            <li>Magister psychologii + 4‑letnie szkolenie psychoterapeutyczne</li>
+            <li>Regularna superwizja</li>
+            <li>Sesje online i w gabinecie (Warszawa)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="oferta" class="container offer reveal">
+      <h2>Oferta</h2>
+      <div class="cards">
+        <div class="card"><h3>Terapia indywidualna</h3><p>Sesje 50 min — praca nad lękiem, stresem, nastrojem, samooceną.</p></div>
+        <div class="card"><h3>Terapia par</h3><p>Spotkania 75 min — komunikacja, zaufanie, decyzje w relacji.</p></div>
+        <div class="card"><h3>Konsultacje online</h3><p>Krótki plan działania, wskazówki i rekomendacje dalszych kroków.</p></div>
+      </div>
+    </section>
+
+    <section id="cennik" class="container pricing reveal">
+      <h2>Cennik</h2>
+      <div class="price-grid">
+        <div class="price card">
+          <div class="price-top">
+            <h3>Terapia indywidualna</h3>
+            <div class="amount"><span>160</span> zł/50 min</div>
+          </div>
+          <ul>
+            <li>Online lub stacjonarnie</li>
+            <li>Terminy poranne i wieczorne</li>
+            <li>Faktura na życzenie</li>
+          </ul>
+        </div>
+        <div class="price card highlight">
+          <div class="price-top">
+            <h3>Terapia par</h3>
+            <div class="amount"><span>240</span> zł/75 min</div>
+          </div>
+          <ul>
+            <li>Więcej przestrzeni na rozmowę</li>
+            <li>Praca nad komunikacją i bliskością</li>
+            <li>Online lub gabinet</li>
+          </ul>
+        </div>
+        <div class="price card">
+          <div class="price-top">
+            <h3>Konsultacja</h3>
+            <div class="amount"><span>150</span> zł/45 min</div>
+          </div>
+          <ul>
+            <li>Diagnoza potrzeb i rekomendacje</li>
+            <li>Krótka forma</li>
+            <li>Online</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Ceny orientacyjne — potwierdzimy je przy umawianiu wizyty.</p>
+    </section>
+
+    <section id="kontakt" class="container contact card reveal">
+      <div class="contact-grid">
+        <div>
+          <h2>Kontakt</h2>
+          <p><strong>E‑mail:</strong> <a href="mailto:kontakt@terapiablisko.pl">kontakt@terapiablisko.pl</a><br>
+             <strong>Telefon:</strong> +48 600 000 000</p>
+          <p><strong>Gabinet:</strong> ul. Przykładowa 1, Warszawa</p>
+          <p class="note">Formularz jest demonstracyjny — w README znajdziesz integrację z Formspree/EmailJS.</p>
+        </div>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <label>Imię
+            <input name="name" required/>
+          </label>
+          <label>E‑mail
+            <input type="email" name="email" required/>
+          </label>
+          <label>Wiadomość
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> TerapiaBlisko</p></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
